@@ -247,3 +247,13 @@ footer {
     padding-top: 2.5rem;
   }
 }
+
+/* Custom arrow cursor in the accent colour */
+body {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M2 2 L2 20 L7 15 L11 23 L14 22 L10 14 L17 14 Z' fill='%23b5482a' stroke='white' stroke-width='1.5'/></svg>") 2 2, auto;
+}
+
+/* Links keep the normal hand, so people still know what's clickable */
+a {
+  cursor: pointer;
+}

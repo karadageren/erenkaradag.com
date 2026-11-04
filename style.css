@@ -253,7 +253,7 @@ body {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24'><path d='M2 2 L2 20 L7 15 L11 23 L14 22 L10 14 L17 14 Z' fill='%23b5482a' stroke='white' stroke-width='1.5'/></svg>") 2 2, auto;
 }
 
-/* Links keep the normal hand, so people still know what's clickable */
+/* Links get a pointing hand in the accent colour */
 a {
-  cursor: pointer;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'><path d='M9.5 1C10.6 1 11.5 1.9 11.5 3V10.2C11.8 10 12.2 9.9 12.6 10C13.5 10.1 14.1 10.8 14.1 11.6C14.5 11.1 15.1 10.9 15.8 11C16.7 11.2 17.2 11.9 17.2 12.7C17.6 12.3 18.2 12.2 18.7 12.3C19.5 12.5 20 13.2 20 14V17C20 20.2 17.8 22.6 14.6 22.6H11.6C9.5 22.6 8.1 21.7 6.9 19.9L3.7 15.3C3.1 14.5 3.3 13.5 4.1 13C4.8 12.6 5.7 12.7 6.3 13.3L7.5 14.5V3C7.5 1.9 8.4 1 9.5 1Z' fill='%23b5482a' stroke='white' stroke-width='1.5' stroke-linejoin='round'/></svg>") 9 1, pointer;
 }

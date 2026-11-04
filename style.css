@@ -1,0 +1,161 @@
+/* ===== Colours and fonts, defined once and reused below ===== */
+:root {
+  --bg: #f7f5f0;          /* warm off-white page background */
+  --text: #22252a;        /* main text: near-black */
+  --muted: #6b6f76;       /* secondary text: grey */
+  --accent: #b5482a;      /* accent colour: brick red */
+  --line: #ddd8cf;        /* thin divider lines */
+  --serif: Georgia, "Times New Roman", serif;
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* ===== Page basics ===== */
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 17px;
+  line-height: 1.6;
+}
+
+/* Keep everything in a readable column, centred on the page */
+header,
+main,
+footer {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* ===== Header: your name ===== */
+header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+h1 {
+  font-family: var(--serif);
+  font-size: 2.8rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+header p {
+  margin: 0.3rem 0 0;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+}
+
+/* ===== Sections ===== */
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+/* A line above the first section, separating it from the header */
+section:first-child {
+  border-top: 1px solid var(--line);
+}
+
+h2 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent);
+  margin: 0 0 1.2rem;
+}
+
+/* ===== Jobs and projects ===== */
+article {
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* The company/date line directly after each job title */
+article > h3 + p {
+  margin: 0.1rem 0 0.4rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.3rem;
+}
+
+/* Titles of books, games and the thesis in italics */
+cite {
+  font-style: italic;
+}
+
+/* ===== Thesis: label, title and subtitle on separate lines ===== */
+.thesis {
+  display: block;
+  margin: 0.6rem 0 0.4rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+}
+
+.thesis-label {
+  display: block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+}
+
+.thesis-title {
+  display: block;
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.thesis-subtitle {
+  display: block;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* ===== Links ===== */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+}
+
+a:hover {
+  color: var(--text);
+}
+
+/* ===== Footer: contact ===== */
+footer {
+  padding-top: 2rem;
+  padding-bottom: 4rem;
+}
+
+/* ===== Small screens (phones) ===== */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  header {
+    padding-top: 2.5rem;
+  }
+}

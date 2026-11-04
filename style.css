@@ -30,7 +30,7 @@ footer {
 
 /* ===== Header: your name ===== */
 header {
-  padding-top: 4rem;
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -143,6 +143,83 @@ a:hover {
 footer {
   padding-top: 2rem;
   padding-bottom: 4rem;
+}
+
+/* ===== Site menu (top of every page) ===== */
+.site-nav {
+  max-width: 44rem;
+  margin: 0 auto;
+  padding: 1.2rem 1.5rem;
+  display: flex;                    /* puts name and links on one row */
+  justify-content: space-between;   /* name left, links right */
+  align-items: baseline;
+  flex-wrap: wrap;                  /* lets links drop below on small screens */
+  gap: 0.5rem 1.5rem;
+}
+
+.site-nav a {
+  border-bottom: none;
+  color: var(--text);
+}
+
+.site-name {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  margin-left: 1.2rem;
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+.nav-links a:first-child {
+  margin-left: 0;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* The link of the page you are currently on */
+.nav-links a[aria-current="page"] {
+  color: var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+/* ===== Cards on the home page ===== */
+.cards {
+  display: grid;                                          /* a grid of boxes */
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: block;
+  padding: 1.2rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  color: var(--text);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  color: var(--text);
+  border-color: var(--accent);
+  transform: translateY(-2px);       /* lifts the card slightly */
+}
+
+.card p {
+  margin: 0.3rem 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* "Coming soon" text */
+.placeholder {
+  color: var(--muted);
+  font-style: italic;
 }
 
 /* ===== Small screens (phones) ===== */

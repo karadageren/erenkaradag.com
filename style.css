@@ -274,7 +274,7 @@ a {
 
 /* 2. Apply it to the cards */
 .card {
-  animation: card-in 0.6s ease-out both;
+  animation: card-in 0.6s ease-out backwards;
 }
 
 /* 3. Start each card a little later than the one before */

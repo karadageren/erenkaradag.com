@@ -5,7 +5,7 @@
   --muted: #6b6f76;       /* secondary text: grey */
   --accent: #b5482a;      /* accent colour: brick red */
   --line: #ddd8cf;        /* thin divider lines */
-  --serif: Georgia, "Times New Roman", serif;
+  --serif: "Fraunces", Georgia, serif;
   --sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -220,6 +220,17 @@ footer {
 .placeholder {
   color: var(--muted);
   font-style: italic;
+}
+
+/* "Built by" line at the very bottom */
+.colophon {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.colophon a {
+  color: var(--muted);
 }
 
 /* ===== Small screens (phones) ===== */
